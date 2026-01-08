@@ -14,7 +14,7 @@ public class ReportsController : ControllerBase
         _service = service;
     }
 
-    [HttpGet("mileage/by-vehicle")]
+    [HttpGet("mileage/vehicle")]
     public async Task<IActionResult> MileageByVehicle([FromQuery] int year, [FromQuery] int month)
     {
         try
@@ -27,7 +27,7 @@ public class ReportsController : ControllerBase
         }
     }
 
-    [HttpGet("mileage/by-department")]
+    [HttpGet("mileage/department")]
     public async Task<IActionResult> MileageByDepartment([FromQuery] int year, [FromQuery] int month)
     {
         try
@@ -40,7 +40,7 @@ public class ReportsController : ControllerBase
         }
     }
 
-    [HttpGet("revenue/by-department")]
+    [HttpGet("revenue/department")]
     public async Task<IActionResult> RevenueByDepartment([FromQuery] int year, [FromQuery] int month)
     {
         try
