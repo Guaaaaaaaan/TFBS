@@ -1,0 +1,15 @@
+# Visual Studio / Rider
+.vs/
+*.user
+*.suo
+
+# Build outputs
+bin/
+obj/
+
+# Logs / temp
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
